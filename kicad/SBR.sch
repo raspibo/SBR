@@ -114,12 +114,10 @@ Wire Wire Line
 	1900 1950 4100 1950
 Wire Wire Line
 	1900 2050 4100 2050
-Text GLabel 6900 1550 2    60   Input ~ 0
+Text GLabel 7250 1450 2    60   Input ~ 0
 PWM1
-Text GLabel 7250 1650 2    60   Input ~ 0
+Text GLabel 7200 2250 2    60   Input ~ 0
 PWM2
-Wire Wire Line
-	7250 1650 6700 1650
 Wire Wire Line
 	6900 1550 6700 1550
 Text GLabel 5500 4700 0    60   Input ~ 0
@@ -130,10 +128,8 @@ Text GLabel 6400 5100 0    60   Input ~ 0
 EN
 Text GLabel 6400 5700 0    60   Input ~ 0
 EN
-Text GLabel 6900 1750 2    60   Input ~ 0
+Text GLabel 6900 1950 2    60   Input ~ 0
 EN
-Wire Wire Line
-	6900 1750 6700 1750
 Text GLabel 1900 2550 2    60   Input ~ 0
 IntMPU
 $Comp
@@ -741,16 +737,14 @@ F 3 "" H 1650 3650 50  0001 C CNN
 	1    1650 3650
 	0    -1   -1   0   
 $EndComp
-Text GLabel 7250 1450 2    60   Input ~ 0
-WDFromOp
+Text GLabel 6900 1550 2    60   Input ~ 0
+WDFOp
 Wire Wire Line
 	6700 1350 6900 1350
 Wire Wire Line
 	7250 1450 6700 1450
-Text GLabel 7250 2450 2    60   Input ~ 0
-WDToOp
-Wire Wire Line
-	7250 2450 6700 2450
+Text GLabel 7200 2450 2    60   Input ~ 0
+WDTOp
 $Comp
 L +5V #PWR?
 U 1 1 5D1FF9C4
@@ -774,19 +768,17 @@ F 3 "" H 9150 1350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 8850 1450 0    60   Input ~ 0
-WDFromOp
+WDFOp
 Text GLabel 9300 1550 0    60   Input ~ 0
-WDToOp
+WDTOp
 Wire Wire Line
 	9150 1350 9350 1350
 Wire Wire Line
 	9350 1450 8850 1450
 Wire Wire Line
 	9300 1550 9350 1550
-Text GLabel 6900 2050 2    60   Input ~ 0
+Text GLabel 7200 2050 2    60   Input ~ 0
 Servo
-Wire Wire Line
-	6700 2050 6900 2050
 Text GLabel 9350 2500 0    60   Input ~ 0
 Servo
 $Comp
@@ -849,12 +841,6 @@ F 3 "" H 3100 2800 50  0001 C CNN
 	1    3100 2800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4100 2550 3350 2550
-Wire Wire Line
-	3350 2550 3350 2650
-Wire Wire Line
-	3350 2650 3100 2650
 $Comp
 L +BATT #PWR?
 U 1 1 5D235962
@@ -879,4 +865,22 @@ F 3 "" H 3100 2950 50  0001 C CNN
 $EndComp
 Text Notes 3000 3400 1    60   ~ 0
 Controllo Carica Batteria
+Wire Wire Line
+	3100 2650 3650 2650
+Wire Wire Line
+	3650 2650 3650 2450
+Wire Wire Line
+	3650 2450 4100 2450
+Wire Wire Line
+	6900 1950 6700 1950
+Wire Wire Line
+	7200 2050 6700 2050
+Wire Wire Line
+	7200 2250 6700 2250
+Text Notes 9150 4950 0    60   ~ 0
+Motor R
+Text Notes 9150 5950 0    60   ~ 0
+Motor L\n
+Wire Wire Line
+	7200 2450 6700 2450
 $EndSCHEMATC
