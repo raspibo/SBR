@@ -1,0 +1,30 @@
+1	D1/TX	Connesisone seriale 
+2	D0/RX	Connesisone seriale
+3	RESET
+4	GND
+5	D2		MPU Interrupt
+6	D3*		Motor Dx "Timer2"
+7	D4		WD from OP
+8	D5*		
+9	D6* 	
+10	D7		
+11	D8		Motor Enable
+12	D9* 	Servo
+13	D10*		
+14	D11* 	Motor Sx "Timer2"
+15	D12  	
+16	D13		LedR WD to OP
+17	3V3		
+18	AREF
+19	A7		
+20	A6		
+21	A5		MPC6050 + LCD I2c
+22	A4		MPC6050 + LCD I2c
+23	A3		
+24	A2		
+25	A1		
+26	A0		Battery Voltage
+27	+5V
+28	RESET
+29	GND
+30	VIN
